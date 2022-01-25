@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right bottom, #ec98b0, #98ceee);
+    font-family:arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+}
+.main-container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    height: 78vh;
+    background-image: url(back.png);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 9px 7px 5px 4px rgba(0,0,0,0.3);
+   
+}
+.main-container::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.3));
+    z-index: 0;
+ 
+}
+.container-top{
+    padding-top: 2px;
+    text-align: center;
+    z-index: 999;
+ 
+}
+.container-top h1{
+    padding-top:1px;
+    color: rgb(222, 226, 253);text-shadow:#000 2px -1px, #000 -1px 1px, #000 2px 1px, #000 -1px -1px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    line-height:2;
+}
+.container-top input,
+.container-top button{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding:10px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+}
+.container-top input{
+    background-color: rgba(0,0,0,0.3);
+    border-bottom: solid 2px rgb(11, 91, 138);
+    border-radius:10px 0 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+.container-top input:focus{
+    color: black;
+    font-size: 15px;
+ 
+}
+.container-top::placeholder{
+    color: rgb(61, 56, 56);
+}
+.container-top button{
+    background-color:rgb(89, 150, 190);
+    color: rgb(191, 236, 250);text-shadow:#000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+    font-size:12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius:3px;
+    cursor: pointer;
+    transition:all .3s;
+ 
+}
+.top-container button :hover{
+    font-size: 13px;
+    border-radius:10px;
+ 
+}
+.container-top .error{
+    color: white;
+    font-size: 16px;
+}
+.icon{
+    text-align: center;
+    padding: top 15px;
+}
+.location{
+    padding-bottom: 10px;
+    text-align: center;
+    color:#ecf7f8; text-shadow:#000 2px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+    line-height:1.6;
+}
+.location .city{
+    font-size: 20px;
+    font-weight: bold;
+}
+.current{
+    width: 100%;
+    position: relative;
+    padding-top: 12px;
+    color: rgb(232, 248, 248);text-shadow:#000 2px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+    font-size: 17px;
+    line-height: 1.2;
+ 
+}
+.current::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.9px;
+    background-color:white;
+}
+.current > * {
+    padding-bottom: 9px;
+}
